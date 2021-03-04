@@ -1,0 +1,38 @@
+.footer__dark {
+  min-height: 30vh;
+  background: $color-turquesa;
+  margin-top: 250px;
+  width: 100%;
+  @include flex(row, space-around, center);
+
+  .footer__rights {
+    @include flex(column, center, flex-start);
+    @include font(20px, bold, lowercase);
+    min-height: 80px;
+  }
+
+  .footer__img {
+    width: 90px;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: all ease-in .5s;
+    }
+  }
+
+  .footer__links {
+
+    .links__mail,
+    .links__ig,
+    .links__fb {
+      margin-left: 20px;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: all ease-in .5s;
+      }
+    }
+  }
+}

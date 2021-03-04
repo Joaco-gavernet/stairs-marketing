@@ -1,0 +1,165 @@
+.welcome {
+  @include flex(normal, space-evenly, center);
+  padding: 20px 0;
+  min-height: 500px;
+
+  .welcome__img {
+    width: 410px;
+  }
+
+  .welcome__info {
+    max-width: 700px;
+    @include flex(column, center, flex-start);
+
+    .info__h1 {
+      @include font(80px, bold, none);
+      font-family: 'Amatic SC', cursive;
+    }
+
+    .info__p {
+      @include font($regular-font, normal, none);
+      margin-top: 20px;
+      letter-spacing: 1.8px;
+
+      b {
+        font-weight: bold;
+      }
+
+      .p__red {
+        color: $color-rojo;
+      }
+    }
+  }
+}
+
+.services {
+  @include flex(column, center, center);
+  min-height: 600px;
+  padding: 20px 0;
+
+  .services__h2 {
+    @include font($h2-font, normal, none);
+    text-align: center;
+  }
+  
+  .services__itemsGroup {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 80px;
+    @include flex(row, space-evenly, center);
+    
+    .services__item {
+      @include flex(column, space-evenly, center);
+      max-width: 500px;
+      margin: 40px 0;
+
+      .item__img {
+        width: 200px;
+        margin-bottom: 20px;
+      }
+
+      .item__button {
+        width: 250px;
+        height: 60px;
+        @include font(35px, bold, none);
+        outline: none;
+        border: white;
+        background: $color-turquesa;
+        color: $color-claro;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: all ease-in .5s;
+
+        &:hover {
+          background: $color-rojo;
+          transform: scale(1.1);
+        }
+      }
+
+      .item__p {
+        @include font($regular-font, normal, none);
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+  }
+
+
+  .services__link {
+    @include font(25px, normal, none);
+    position: relative;
+    padding-bottom: 5px;
+    
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 0;
+      background: $color-celeste;
+    }
+      
+    &:hover {
+      transition: color ease-in 1s;
+      color: $color-rojo;
+
+      &:after {
+        transition: width ease-in .5s;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.contact {
+  @include flex(column, center, center);
+  padding: 20px 0;
+
+  .contact__h2 {
+    @include font($h2-font, normal, none);
+  }
+  
+  .contact__form {
+    margin-top: 30px;
+    @include flex(column, space-around, center);
+    background: $color-celeste;
+    padding: 40px;
+    border-radius: 20px;
+
+    .form__fullname,
+    .form__phone,
+    .form__mail,
+    .form__message {
+      min-width: 500px;
+      margin: 10px 0;
+      padding: 10px 20px;
+      border: 1px solid $color-oscuro;
+      border-radius: 5px;
+      outline: none;
+      @include font(1.2rem, normal, none);
+    }
+    
+    .form__send {
+      width: 200px;
+      height: 50px;
+      align-self: center;
+      justify-self: flex-end;
+      background: $color-claro;
+      border-radius: 20px;
+      border: none;
+      color: $color-oscuro;
+      outline: none;
+      @include font(1.2rem, bold, none);
+      cursor: pointer;
+      margin: 20px 0;
+      transition: all, 1s;
+
+      &:hover {
+        background: $color-rojo;
+        transform: scale(1.08);
+      }
+    }
+  }
+}

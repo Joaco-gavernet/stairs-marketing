@@ -1,0 +1,13 @@
+// Mixins
+@mixin flex ($flow, $jc, $ac){
+	display: flex;
+	flex-flow: $flow;
+	justify-content: $jc;
+	align-items: $ac;
+}
+
+@mixin font ($size, $weight, $tt){
+	font-size: $size;
+	font-weight: $weight;
+	text-transform: $tt;
+}

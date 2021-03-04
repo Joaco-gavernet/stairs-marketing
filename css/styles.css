@@ -1,0 +1,297 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.body__dark {
+  background: #324260;
+  color: #fffdf8;
+}
+
+hr {
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  height: 3px;
+  background: #1a1a1a;
+  z-index: 1;
+  margin: 30px auto;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+.nav .nav__img {
+  width: 160px;
+}
+.nav .nav__ul {
+  font-size: 25px;
+  font-weight: normal;
+  text-transform: none;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav .nav__ul .nav__li {
+  margin-left: 20px;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+.nav .nav__ul .nav__li:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: #93a1b8;
+}
+.nav .nav__ul .nav__li:hover {
+  transition: color ease-in 0.8s;
+  color: #e94f24;
+}
+.nav .nav__ul .nav__li:hover:after {
+  transition: width ease-in 0.5s;
+  width: 100%;
+}
+
+.welcome {
+  display: flex;
+  flex-flow: normal;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0;
+  min-height: 500px;
+}
+.welcome .welcome__img {
+  width: 410px;
+}
+.welcome .welcome__info {
+  max-width: 700px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.welcome .welcome__info .info__h1 {
+  font-size: 80px;
+  font-weight: bold;
+  text-transform: none;
+  font-family: "Amatic SC", cursive;
+}
+.welcome .welcome__info .info__p {
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: none;
+  margin-top: 20px;
+  letter-spacing: 1.8px;
+}
+.welcome .welcome__info .info__p b {
+  font-weight: bold;
+}
+.welcome .welcome__info .info__p .p__red {
+  color: #e94f24;
+}
+
+.services {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  padding: 20px 0;
+}
+.services .services__h2 {
+  font-size: 60px;
+  font-weight: normal;
+  text-transform: none;
+  text-align: center;
+}
+.services .services__itemsGroup {
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 80px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.services .services__itemsGroup .services__item {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 500px;
+  margin: 40px 0;
+}
+.services .services__itemsGroup .services__item .item__img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+.services .services__itemsGroup .services__item .item__button {
+  width: 250px;
+  height: 60px;
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: none;
+  outline: none;
+  border: white;
+  background: #60bfbb;
+  color: #fffdf8;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all ease-in 0.5s;
+}
+.services .services__itemsGroup .services__item .item__button:hover {
+  background: #e94f24;
+  transform: scale(1.1);
+}
+.services .services__itemsGroup .services__item .item__p {
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: none;
+  text-align: center;
+  margin-top: 20px;
+}
+.services .services__link {
+  font-size: 25px;
+  font-weight: normal;
+  text-transform: none;
+  position: relative;
+  padding-bottom: 5px;
+}
+.services .services__link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: #93a1b8;
+}
+.services .services__link:hover {
+  transition: color ease-in 1s;
+  color: #e94f24;
+}
+.services .services__link:hover:after {
+  transition: width ease-in 0.5s;
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.contact .contact__h2 {
+  font-size: 60px;
+  font-weight: normal;
+  text-transform: none;
+}
+.contact .contact__form {
+  margin-top: 30px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #93a1b8;
+  padding: 40px;
+  border-radius: 20px;
+}
+.contact .contact__form .form__fullname,
+.contact .contact__form .form__phone,
+.contact .contact__form .form__mail,
+.contact .contact__form .form__message {
+  min-width: 500px;
+  margin: 10px 0;
+  padding: 10px 20px;
+  border: 1px solid #1a1a1a;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-transform: none;
+}
+.contact .contact__form .form__send {
+  width: 200px;
+  height: 50px;
+  align-self: center;
+  justify-self: flex-end;
+  background: #fffdf8;
+  border-radius: 20px;
+  border: none;
+  color: #1a1a1a;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: none;
+  cursor: pointer;
+  margin: 20px 0;
+  transition: all, 1s;
+}
+.contact .contact__form .form__send:hover {
+  background: #e94f24;
+  transform: scale(1.08);
+}
+
+.footer__dark {
+  min-height: 30vh;
+  background: #60bfbb;
+  margin-top: 250px;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer__dark .footer__rights {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: lowercase;
+  min-height: 80px;
+}
+.footer__dark .footer__img {
+  width: 90px;
+  cursor: pointer;
+}
+.footer__dark .footer__img:hover {
+  transform: scale(1.1);
+  transition: all ease-in 0.5s;
+}
+.footer__dark .footer__links .links__mail,
+.footer__dark .footer__links .links__ig,
+.footer__dark .footer__links .links__fb {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.footer__dark .footer__links .links__mail:hover,
+.footer__dark .footer__links .links__ig:hover,
+.footer__dark .footer__links .links__fb:hover {
+  transform: scale(1.1);
+  transition: all ease-in 0.5s;
+}

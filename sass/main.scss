@@ -1,0 +1,26 @@
+// methods
+@import "_vars.scss"; // vars
+@import "_mixins.scss"; // mixins
+@import "_resets.scss"; // resets
+
+// general content
+.body__dark {
+  background: $color-azul;
+  color: $color-claro;
+}
+hr {
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  height: 3px;
+  background: $color-oscuro;
+  z-index: 1;
+  margin: 30px auto;
+}
+// content
+@import "_nav.scss"; // nav
+@import "_inicio.scss"; // inicio
+@import "_footer.scss"; // footer
+
+// adjustment
+// @import "_queries.scss"; // queries

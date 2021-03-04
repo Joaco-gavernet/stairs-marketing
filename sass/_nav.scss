@@ -1,0 +1,40 @@
+.nav {
+  @include flex(row, space-around, center);
+  padding: 20px 0;
+
+  .nav__img {
+    width: 160px;
+  }
+
+  .nav__ul {
+    @include font(25px, normal, none);
+    @include flex(row, center, center);
+    
+    .nav__li {
+      margin-left: 20px;
+      position: relative;
+      cursor: pointer;
+      padding-bottom: 5px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 0;
+        background: $color-celeste;
+      }
+        
+      &:hover {
+        transition: color ease-in .8s;
+        color: $color-rojo;
+  
+        &:after {
+          transition: width ease-in .5s;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
