@@ -73,7 +73,10 @@ hr {
   width: 100%;
 }
 
-.welcome {
+.home {
+  display: none;
+}
+.home .welcome {
   display: flex;
   flex-flow: normal;
   justify-content: space-evenly;
@@ -81,37 +84,36 @@ hr {
   padding: 20px 0;
   min-height: 500px;
 }
-.welcome .welcome__img {
+.home .welcome .welcome__img {
   width: 410px;
 }
-.welcome .welcome__info {
+.home .welcome .welcome__info {
   max-width: 700px;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: flex-start;
 }
-.welcome .welcome__info .info__h1 {
+.home .welcome .welcome__info .info__h1 {
   font-size: 80px;
   font-weight: bold;
   text-transform: none;
   font-family: "Amatic SC", cursive;
 }
-.welcome .welcome__info .info__p {
+.home .welcome .welcome__info .info__p {
   font-size: 30px;
   font-weight: normal;
   text-transform: none;
   margin-top: 20px;
   letter-spacing: 1.8px;
 }
-.welcome .welcome__info .info__p b {
+.home .welcome .welcome__info .info__p b {
   font-weight: bold;
 }
-.welcome .welcome__info .info__p .p__red {
+.home .welcome .welcome__info .info__p .p__red {
   color: #e94f24;
 }
-
-.services {
+.home .services {
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -119,13 +121,13 @@ hr {
   min-height: 600px;
   padding: 20px 0;
 }
-.services .services__h2 {
+.home .services .services__h2 {
   font-size: 60px;
   font-weight: normal;
   text-transform: none;
   text-align: center;
 }
-.services .services__itemsGroup {
+.home .services .services__itemsGroup {
   width: 100%;
   margin-top: 20px;
   padding: 0 80px;
@@ -134,7 +136,7 @@ hr {
   justify-content: space-evenly;
   align-items: center;
 }
-.services .services__itemsGroup .services__item {
+.home .services .services__itemsGroup .services__item {
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
@@ -142,11 +144,11 @@ hr {
   max-width: 500px;
   margin: 40px 0;
 }
-.services .services__itemsGroup .services__item .item__img {
+.home .services .services__itemsGroup .services__item .item__img {
   width: 200px;
   margin-bottom: 20px;
 }
-.services .services__itemsGroup .services__item .item__button {
+.home .services .services__itemsGroup .services__item .item__button {
   width: 250px;
   height: 60px;
   font-size: 35px;
@@ -161,25 +163,25 @@ hr {
   margin-top: 20px;
   transition: all ease-in 0.5s;
 }
-.services .services__itemsGroup .services__item .item__button:hover {
+.home .services .services__itemsGroup .services__item .item__button:hover {
   background: #e94f24;
   transform: scale(1.1);
 }
-.services .services__itemsGroup .services__item .item__p {
+.home .services .services__itemsGroup .services__item .item__p {
   font-size: 30px;
   font-weight: normal;
   text-transform: none;
   text-align: center;
   margin-top: 20px;
 }
-.services .services__link {
+.home .services .services__link {
   font-size: 25px;
   font-weight: normal;
   text-transform: none;
   position: relative;
   padding-bottom: 5px;
 }
-.services .services__link:after {
+.home .services .services__link:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -188,28 +190,27 @@ hr {
   width: 0;
   background: #93a1b8;
 }
-.services .services__link:hover {
+.home .services .services__link:hover {
   transition: color ease-in 1s;
   color: #e94f24;
 }
-.services .services__link:hover:after {
+.home .services .services__link:hover:after {
   transition: width ease-in 0.5s;
   width: 100%;
 }
-
-.contact {
+.home .contact {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
 }
-.contact .contact__h2 {
+.home .contact .contact__h2 {
   font-size: 60px;
   font-weight: normal;
   text-transform: none;
 }
-.contact .contact__form {
+.home .contact .contact__form {
   margin-top: 30px;
   display: flex;
   flex-flow: column;
@@ -219,10 +220,10 @@ hr {
   padding: 40px;
   border-radius: 20px;
 }
-.contact .contact__form .form__fullname,
-.contact .contact__form .form__phone,
-.contact .contact__form .form__mail,
-.contact .contact__form .form__message {
+.home .contact .contact__form .form__fullname,
+.home .contact .contact__form .form__phone,
+.home .contact .contact__form .form__mail,
+.home .contact .contact__form .form__message {
   min-width: 500px;
   margin: 10px 0;
   padding: 10px 20px;
@@ -233,7 +234,7 @@ hr {
   font-weight: normal;
   text-transform: none;
 }
-.contact .contact__form .form__send {
+.home .contact .contact__form .form__send {
   width: 200px;
   height: 50px;
   align-self: center;
@@ -250,15 +251,205 @@ hr {
   margin: 20px 0;
   transition: all, 1s;
 }
-.contact .contact__form .form__send:hover {
+.home .contact .contact__form .form__send:hover {
   background: #e94f24;
   transform: scale(1.08);
+}
+
+.aboutSm {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.aboutSm .aboutStairs {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.aboutSm .aboutStairs .aboutStairs__img {
+  max-width: 1000px;
+  margin-bottom: 50px;
+}
+.aboutSm .aboutStairs .aboutStairs__h1 {
+  font-size: 80px;
+  font-weight: bold;
+  text-transform: none;
+  margin-bottom: 20px;
+}
+.aboutSm .aboutStairs .aboutStairs__p {
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: none;
+  text-align: center;
+  max-width: 950px;
+  margin-bottom: 20px;
+}
+.aboutSm .identity {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.aboutSm .identity .identity__h2 {
+  font-size: 60px;
+  font-weight: normal;
+  text-transform: none;
+  margin-bottom: 20px;
+}
+.aboutSm .identity .identity__p {
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: none;
+  text-align: center;
+  max-width: 950px;
+}
+.aboutSm .proposal {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.aboutSm .proposal .proposal__h2 {
+  font-size: 60px;
+  font-weight: normal;
+  text-transform: none;
+  margin-bottom: 40px;
+}
+.aboutSm .proposal .proposal__values {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.aboutSm .proposal .proposal__values .value {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  margin: 0 20px;
+}
+.aboutSm .proposal .proposal__values .value .value__button {
+  width: 250px;
+  height: 60px;
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: none;
+  outline: none;
+  border: white;
+  background: #60bfbb;
+  color: #fffdf8;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all ease-in 0.5s;
+}
+.aboutSm .proposal .proposal__values .value .value__button:hover {
+  background: #e94f24;
+  transform: scale(1.1);
+}
+.aboutSm .proposal .proposal__values .value .value__p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.services {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.services .servicesMain {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.services .servicesMain .servicesMain__img {
+  max-width: 1000px;
+  margin-bottom: 50px;
+}
+.services .servicesMain .servicesMain__h1 {
+  font-size: 80px;
+  font-weight: bold;
+  text-transform: none;
+  margin-bottom: 20px;
+}
+.services .servicesMain .servicesMain__h2 {
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: none;
+  color: #e94f24;
+  margin-bottom: 20px;
+}
+.services .servicesMain .servicesMain__p {
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: none;
+  text-align: center;
+  max-width: 950px;
+  margin-bottom: 20px;
+}
+.services .services__offers {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.services .services__offers .offers__item {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin-bottom: 50px;
+}
+.services .services__offers .offers__item .item__img {
+  padding: 25px;
+}
+.services .services__offers .offers__item .item__info {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 50px;
+}
+.services .services__offers .offers__item .item__info .info__button {
+  width: 250px;
+  height: 60px;
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: none;
+  outline: none;
+  border: white;
+  background: #60bfbb;
+  color: #fffdf8;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  transition: all ease-in 0.5s;
+}
+.services .services__offers .offers__item .item__info .info__p {
+  text-align: left;
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: none;
+  margin-bottom: 20px;
 }
 
 .footer__dark {
   min-height: 30vh;
   background: #60bfbb;
   margin-top: 250px;
+  margin-bottom: 60px;
   width: 100%;
   display: flex;
   flex-flow: row;
