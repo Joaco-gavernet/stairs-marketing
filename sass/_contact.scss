@@ -1,0 +1,80 @@
+.contact {
+  @include flex(column, center, center);
+
+  .contactMain {
+    @include flex(column, center, center);
+    margin-bottom: 60px;
+
+    .contactMain__h2 {
+      @include font($h2-font, normal, none);
+    }
+
+    .contactMain__p {
+      @include font($regular-font, normal, none);
+    }
+  }
+
+  .contact__formOriginal {
+    // @extend .contact__form;
+    margin-top: 30px;
+    @include flex(column, space-around, center);
+    background: $color-celeste;
+    padding: 40px;
+    border-radius: 20px;
+
+    .form__fullname,
+    .form__phone,
+    .form__mail,
+    .form__message {
+      min-width: 500px;
+      margin: 10px 0;
+      padding: 10px 20px;
+      border: 1px solid $color-oscuro;
+      border-radius: 5px;
+      outline: none;
+      @include font(1.2rem, normal, none);
+    }
+
+    .form__send {
+      width: 200px;
+      height: 50px;
+      align-self: center;
+      justify-self: flex-end;
+      background: $color-claro;
+      border-radius: 20px;
+      border: none;
+      color: $color-oscuro;
+      outline: none;
+      @include font(1.2rem, bold, none);
+      cursor: pointer;
+      margin: 20px 0;
+      transition: all, 1s;
+
+      &:hover {
+        background: $color-rojo;
+        transform: scale(1.08);
+      }
+    }
+  }
+
+  .contact__info {
+    margin-top: 60px;
+    @include flex(column, center, center);
+
+    .info__p {
+      @include font($regular-font, normal, none);
+      margin-left: 30px;
+    }
+
+    .info__bubble {
+      @include flex(row, center, center);
+      margin-top: 30px;
+    }
+
+    .info__links {
+      @include flex(row, space-around, center);
+      margin-top: 30px;
+      width: 200px;
+    }
+  }
+}

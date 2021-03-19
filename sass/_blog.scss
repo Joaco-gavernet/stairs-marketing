@@ -1,0 +1,54 @@
+.blog {
+  @include flex(column, center, center);
+  display: none;
+
+  .blogMain {
+    @include flex(column, center, center);
+    margin-bottom: 100px;
+
+    .blogMain__img {
+      max-width: 1000px;
+      margin-bottom: 50px;
+      // @extend .aboutStairs__img;
+    }
+
+    .blogMain__h1 {
+      @include font(80px, bold, none);
+      margin-bottom: 10px;
+      // @extend .aboutStairs__h1;
+    }
+
+    .blogMain__h2 {
+      @include font($h3-font, normal, none);
+      color: $color-rojo;
+    }
+  }
+
+  .blog__articles {
+    width: $container-desktop-width;
+    @include flex(column, center, flex-start);
+
+    .article {
+      @include flex(row, center, center);
+      max-width: 900px;
+      margin-bottom: 40px;
+
+      .article__img {
+        width: 400px;
+      }
+
+      .article__info {
+        @include flex(column, center, flex-start);
+        margin-left: 20px;
+
+        .info__h3 {
+          @include font($h3-font, normal, none);
+        }
+
+        .info__p {
+          @include font($regular-font, normal, none);
+        }
+      }
+    }
+  }
+}

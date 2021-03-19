@@ -66,14 +66,14 @@
           background: $color-turquesa;
           color: $color-claro;
           border-radius: 20px;
-          cursor: pointer;
+          // cursor: pointer;
           margin-bottom: 20px;
           transition: all ease-in .5s;
 
-          &:hover {
-            background: $color-rojo;
-            transform: scale(1.1);
-          }
+          // &:hover {
+          //   background: $color-rojo;
+          //   transform: scale(1.1);
+          // }
         }
 
         .value__p {
