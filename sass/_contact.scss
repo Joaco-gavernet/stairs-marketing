@@ -1,5 +1,6 @@
 .contact {
   @include flex(column, center, center);
+  display: none;
 
   .contactMain {
     @include flex(column, center, center);

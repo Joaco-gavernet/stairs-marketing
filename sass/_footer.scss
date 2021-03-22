@@ -8,12 +8,12 @@
 
   .footer__rights {
     @include flex(column, center, flex-start);
-    @include font(20px, bold, lowercase);
+    @include font(20px, bold, normal);
     min-height: 80px;
   }
 
   .footer__img {
-    width: 90px;
+    width: 150px;
     cursor: pointer;
 
     &:hover {

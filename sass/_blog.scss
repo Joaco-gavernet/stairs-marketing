@@ -46,7 +46,8 @@
         }
 
         .info__p {
-          @include font($regular-font, normal, none);
+          @include font(20px, normal, none);
+          margin-top: 10px;
         }
       }
     }

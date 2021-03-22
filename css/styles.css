@@ -73,9 +73,6 @@ hr {
   width: 100%;
 }
 
-.home {
-  display: none;
-}
 .home .welcome {
   display: flex;
   flex-flow: normal;
@@ -502,9 +499,10 @@ hr {
   text-transform: none;
 }
 .blog .blog__articles .article .article__info .info__p {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: normal;
   text-transform: none;
+  margin-top: 10px;
 }
 
 .testimonials {
@@ -546,6 +544,7 @@ hr {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 .contact .contactMain {
   display: flex;
@@ -656,11 +655,11 @@ hr {
   align-items: flex-start;
   font-size: 20px;
   font-weight: bold;
-  text-transform: lowercase;
+  text-transform: normal;
   min-height: 80px;
 }
 .footer__dark .footer__img {
-  width: 90px;
+  width: 150px;
   cursor: pointer;
 }
 .footer__dark .footer__img:hover {
