@@ -1,6 +1,5 @@
 .testimonials {
   @include flex(column, center, center);
-  display: none;
 
   .testimonialsMain {
     @include flex(column, center, center);

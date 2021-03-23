@@ -258,7 +258,6 @@ hr {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  display: none;
 }
 .aboutSm .aboutStairs {
   display: flex;
@@ -358,7 +357,6 @@ hr {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  display: none;
 }
 .services .servicesMain {
   display: flex;
@@ -443,7 +441,6 @@ hr {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  display: none;
 }
 .blog .blogMain {
   display: flex;
@@ -510,7 +507,6 @@ hr {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  display: none;
 }
 .testimonials .testimonialsMain {
   display: flex;
@@ -544,7 +540,6 @@ hr {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  display: none;
 }
 .contact .contactMain {
   display: flex;

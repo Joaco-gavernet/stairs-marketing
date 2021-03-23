@@ -1,6 +1,5 @@
 .aboutSm {
   @include flex(column, center, center);
-  display: none;
 
   .aboutStairs {
     @include flex(column, center, center);

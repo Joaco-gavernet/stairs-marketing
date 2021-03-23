@@ -1,6 +1,5 @@
 .services {
   @include flex(column, center, center);
-  display: none;
 
   .servicesMain {
     @include flex(column, center, center);

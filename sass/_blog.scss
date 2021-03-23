@@ -1,6 +1,5 @@
 .blog {
   @include flex(column, center, center);
-  display: none;
 
   .blogMain {
     @include flex(column, center, center);
